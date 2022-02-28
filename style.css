@@ -5,6 +5,7 @@ html {
     min-height: 100vh;
     flex-direction: column;
     margin: 0px;
+    justify-content: center;
 }
 header,
 .hero,
@@ -14,14 +15,9 @@ footer {
 
 .header {
     display: flex;
-    padding: 30px;
-}
-
-#logo {
-    font-size: 24px;
-    color: #F9FAF8;
-    margin: 0px;
-    align-self: center;
+    padding: 5vw;
+    padding-top: 5px;
+    padding-bottom: 3vw;
 }
 
 ul {
@@ -29,24 +25,24 @@ ul {
     list-style-type: none;
     align-items: center;
     margin: 0px;
-    margin-left: auto;
     gap: 15px;
 }
 .links {
     align-self: center;
+    margin-left: auto;
 }
 
 .hero {
     display:flex;
     align-items:center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     column-gap: 50px;
-    padding: 30px;
+    row-gap: 50px;
+    padding: 5vw;
+    padding-top: 0vw;
+    flex-wrap: wrap;
 }
 
-.hero-text {
-    flex: 0 0 auto;
-}
 h1{
     font-size: 48px;
     font-weight: 800;
@@ -66,13 +62,7 @@ button{
     width: 90px;
     height: 30px;
 }
-.img {
-    width: 256px;
-    height: 128px;
-    background-color: #E5E7EB;
-    flex: 0 0 auto;
-    text-align: center;
-}
+
 
 a,
 p {
@@ -81,10 +71,60 @@ p {
     font-size: 18px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 h2 {
-    font-size: 36px;
+    font-size: 2.5rem;
     font-weight: 900;
     color: #1F2937;
+}
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+img {
+    border: 5px solid black;
+    height: 10rem;
+    width: 10rem;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    flex-basis: auto;
+    text-align: center;
+    margin: 5vw;
+}
+
+.info-text {
+    color: black;
+    width: 10rem;
+    font-size: 1rem;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    justify-content: stretch;
+    padding: 5vw;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#quote,
+#thor {
+    font-size: 1.5rem;
+    color: #1F2937;
+}
+#thor {
+    align-self: flex-end;
 }
 
 footer {
